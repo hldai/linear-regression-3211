@@ -57,7 +57,7 @@ def train_with_stochastic_gradient_descent(dataset):
             w1 = w1 - learning_rate * grad_w1
 
         loss_val = loss(dataset, w0, w1)
-        if (t + 1) % 100 == 0:
+        if (t + 1) % 500 == 0:
             print('iter {}, loss={}'.format(t + 1, loss_val))
 
     plot_data(dataset, (w0, w1))
